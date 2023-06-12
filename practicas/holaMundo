@@ -1,0 +1,11 @@
+const { Console } = require("node_modules/console-mpds");
+const console = new Console();
+
+const number = console.readNumber("Escribe un número: ");
+const absolute = (number < 0 ? -1 : 1 ) * number
+console.writeln(`El valor absoluto de número ${number} es ${absolute}`)
+
+const name = console.readString("Escribe tu nombre: ")
+const lastName = console.readString("Escribe tus apellidos: ")
+console.writeln(`Tu nombre es ${name} y tus apellidos: ${lastName}`)
+
